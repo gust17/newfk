@@ -19,6 +19,20 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 </head>
+<style>
+    p{
+        color:white;
+        font-weight: bold;
+    }
+    h4{
+        color:white;
+        font-weight: bold;
+    }
+    .cor{
+        background-color: #00FF75;
+        font-weight: bold;
+    }
+</style>
 
 <body style="background-color: black">
 
@@ -29,15 +43,17 @@
                 <center>
 
                     <strong>
-                        <h2 style="color: #00FF75;font-size:45px">Simulador de Investimento</h2>
+                        <h2 style="color: #00FF75;font-size:45px;font-weight: bold;">Simulador de Investimento</h2>
                     </strong>
                     <br>
                     <div class="row">
-                        <div class="col-md-4 text-right"> <button class="btn btn-success btn-lg"
+                        <div class="col-xs-4 text-right">
+                            <button class="btn  btn-lg cor"
                                 onclick="diminui()">-</button></div>
-                        <div class="col-md-4"><input class="form-control input-lg" type="text" id="valor"
+                        <div class="col-xs-4"><input class="form-control input-lg" type="text" id="valor"
                                 value="100000"></div>
-                        <div class="col-md-4 text-left"> <button class="btn btn-success btn-lg"
+                        <div class="col-xs-4 text-left">
+                            <button class="btn cor btn-lg cor"
                                 onclick="aumenta()">+</button></div>
                     </div>
 
@@ -56,10 +72,10 @@
 
 
         <div class="text-center">
-            <button style="color: white" class="btn btn-success btn-lg active" onclick="buscaresultado(1)">12
+            <button style="color: white" class="btn cor btn-lg active" onclick="buscaresultado(1)">12
                 meses</button>
-            <button style="color: white" class="btn btn-success btn-lg " onclick="buscaresultado(2)">24 meses</button>
-            <button style="color: white" class="btn btn-success btn-lg " onclick="buscaresultado(3)">48 meses</button>
+            <button style="color: white" class="btn cor btn-lg " onclick="buscaresultado(2)">24 meses</button>
+            <button style="color: white" class="btn cor btn-lg " onclick="buscaresultado(3)">48 meses</button>
 
         </div>
         <br>
