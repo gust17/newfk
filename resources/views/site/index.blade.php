@@ -29,7 +29,7 @@
             </div>
             <div class="panel-body text-center">
                 <center>
-                    <h2>Quanto gostaria de Investir?</h2>
+                    <h2>Simulador de Investimento</h2>
                     <br>
                     <button onclick="diminui()">-</button> <input type="text" id="valor" value="100000"> <button
                         onclick="aumenta()">+</button>
