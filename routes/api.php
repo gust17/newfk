@@ -26,7 +26,7 @@ Route::get('datavalores/{id}/valor/{valor}', function ($id,$valor) {
     switch ($id) {
         case 1:
             $futuro = $hoje->addMonth(12)->format('d/m/y');
-            $rendimento = $valor+($valor*0.11388);
+            $rendimento = $valor+($valor*0.12);
             return ['data'=>$futuro,'rendimento'=>$rendimento];
             break;
         case 2:

@@ -27,13 +27,23 @@
 
             <div class="panel-body text-center">
                 <center>
-                    <strong><h2 style="color: #00FF77;">Simulador de Investimento</h2></strong>
-                    <br>
-                    <button onclick="diminui()">-</button> <input type="text" id="valor" value="100000"> <button
-                        onclick="aumenta()">+</button>
-                </center>
 
-                <p>Selecione o período de duração do Investimento</p>
+                    <strong><h2 style="color: #00FF75;">Simulador de Investimento</h2></strong>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4 text-right"> <button class="btn btn-success btn-lg" onclick="diminui()">-</button></div>
+                        <div class="col-md-4"><input class="form-control input-lg" type="text" id="valor" value="100000"></div>
+                        <div class="col-md-4 text-left"> <button class="btn btn-success btn-lg"
+                            onclick="aumenta()">+</button></div>
+                    </div>
+
+
+
+                </center>
+                <br>
+
+
+                <p style="color: white">Selecione o período de duração do Investimento</p>
 
 
 
@@ -46,6 +56,9 @@
             <li><a onclick="buscaresultado(3)" data-toggle="pill" href="#menu2">48 meses</a></li>
 
         </ul>
+        <button style="color: white" class="btn btn-success btn-lg active" onclick="buscaresultado(1)">12 meses</button>
+            <button style="color: white" class="btn btn-success btn-lg " onclick="buscaresultado(2)">24 meses</button>
+            <button style="color: white" class="btn btn-success btn-lg " onclick="buscaresultado(3)">48 meses</button>
         <div class="tab-content text-center">
 
 
