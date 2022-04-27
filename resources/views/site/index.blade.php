@@ -28,13 +28,17 @@
             <div class="panel-body text-center">
                 <center>
 
-                    <strong><h2 style="color: #00FF75;">Simulador de Investimento</h2></strong>
+                    <strong>
+                        <h2 style="color: #00FF75;font-size:45px">Simulador de Investimento</h2>
+                    </strong>
                     <br>
                     <div class="row">
-                        <div class="col-md-4 text-right"> <button class="btn btn-success btn-lg" onclick="diminui()">-</button></div>
-                        <div class="col-md-4"><input class="form-control input-lg" type="text" id="valor" value="100000"></div>
+                        <div class="col-md-4 text-right"> <button class="btn btn-success btn-lg"
+                                onclick="diminui()">-</button></div>
+                        <div class="col-md-4"><input class="form-control input-lg" type="text" id="valor"
+                                value="100000"></div>
                         <div class="col-md-4 text-left"> <button class="btn btn-success btn-lg"
-                            onclick="aumenta()">+</button></div>
+                                onclick="aumenta()">+</button></div>
                     </div>
 
 
@@ -50,30 +54,30 @@
             </div>
         </div>
 
-        <ul class="nav nav-pills text-center">
-            <li class="active"><a onclick="buscaresultado(1)" data-toggle="pill" href="#home">12 meses</a></li>
-            <li><a onclick="buscaresultado(2)" data-toggle="pill" href="#menu1">24 meses</a></li>
-            <li><a onclick="buscaresultado(3)" data-toggle="pill" href="#menu2">48 meses</a></li>
 
-        </ul>
-        <button style="color: white" class="btn btn-success btn-lg active" onclick="buscaresultado(1)">12 meses</button>
+        <div class="text-center">
+            <button style="color: white" class="btn btn-success btn-lg active" onclick="buscaresultado(1)">12
+                meses</button>
             <button style="color: white" class="btn btn-success btn-lg " onclick="buscaresultado(2)">24 meses</button>
             <button style="color: white" class="btn btn-success btn-lg " onclick="buscaresultado(3)">48 meses</button>
+
+        </div>
+        <br>
         <div class="tab-content text-center">
 
 
-                <div id="home" class="tab-pane fade in active">
+            <div id="home" class="tab-pane fade in active">
 
-                    <p>Taxa de rendimento 12% ao ano para o periodo de 12 meses</p>
-                </div>
-                <div id="menu1" class="tab-pane fade">
+                <p style="font-size: 19px;color:white">Taxa de rendimento 12% ao ano para o periodo de 12 meses</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
 
-                    <p>Taxa de rendimento 13% ao ano para o periodo de 24 meses</p>
-                </div>
-                <div id="menu2" class="tab-pane fade">
+                <p>Taxa de rendimento 13% ao ano para o periodo de 24 meses</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
 
-                    <p>Taxa de rendimento 14% ao ano para o periodo de 12 meses</p>
-                </div>
+                <p>Taxa de rendimento 14% ao ano para o periodo de 12 meses</p>
+            </div>
 
 
         </div>
