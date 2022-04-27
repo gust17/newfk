@@ -72,10 +72,10 @@
 
 
         <div class="text-center">
-            <button style="color: white" class="btn cor btn-lg active" onclick="buscaresultado(1)">12
+            <button data-toggle="pill" href="#home" style="color: white" class="btn cor btn-lg active" onclick="buscaresultado(1)">12
                 meses</button>
-            <button style="color: white" class="btn cor btn-lg " onclick="buscaresultado(2)">24 meses</button>
-            <button style="color: white" class="btn cor btn-lg " onclick="buscaresultado(3)">48 meses</button>
+            <button data-toggle="pill" href="#menu1" style="color: white" class="btn cor btn-lg " onclick="buscaresultado(2)">24 meses</button>
+            <button data-toggle="pill" href="#menu2" style="color: white" class="btn cor btn-lg " onclick="buscaresultado(3)">48 meses</button>
 
         </div>
         <br>
@@ -88,11 +88,11 @@
             </div>
             <div id="menu1" class="tab-pane fade">
 
-                <p>Taxa de rendimento 13% ao ano para o periodo de 24 meses</p>
+                <p style="font-size: 19px;color:white">Taxa de rendimento 13% ao ano para o periodo de 24 meses</p>
             </div>
             <div id="menu2" class="tab-pane fade">
 
-                <p>Taxa de rendimento 14% ao ano para o periodo de 12 meses</p>
+                <p style="font-size: 19px;color:white">Taxa de rendimento 14% ao ano para o periodo de 12 meses</p>
             </div>
 
 
