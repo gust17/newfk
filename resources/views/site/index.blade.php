@@ -20,16 +20,14 @@
     </script>
 </head>
 
-<body>
+<body style="background-color: black">
 
     <div class="container">
-        <div style="background: rgba(36, 136, 1, .5)" class="panel">
-            <div class="panel-heading text-center">
-                <h3 class="panel-title">Simulador de Investimentos </h3>
-            </div>
+        <div style="background-color: black" class="panel">
+
             <div class="panel-body text-center">
                 <center>
-                    <h2>Simulador de Investimento</h2>
+                    <strong><h2 style="color: #00FF77;">Simulador de Investimento</h2></strong>
                     <br>
                     <button onclick="diminui()">-</button> <input type="text" id="valor" value="100000"> <button
                         onclick="aumenta()">+</button>
@@ -52,15 +50,15 @@
 
 
                 <div id="home" class="tab-pane fade in active">
-                    <h3>HOME</h3>
+
                     <p>Taxa de rendimento 12% ao ano para o periodo de 12 meses</p>
                 </div>
                 <div id="menu1" class="tab-pane fade">
-                    <h3>Menu 1</h3>
+
                     <p>Taxa de rendimento 13% ao ano para o periodo de 24 meses</p>
                 </div>
                 <div id="menu2" class="tab-pane fade">
-                    <h3>Menu 2</h3>
+
                     <p>Taxa de rendimento 14% ao ano para o periodo de 12 meses</p>
                 </div>
 
