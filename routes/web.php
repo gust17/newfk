@@ -1,6 +1,6 @@
 <?php
 
-use Carbon\Carbon;
+use App\Http\Controllers\ProdutoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +15,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $now = Carbon::now();
-    return view('site.index',compact('now'));
+    return redirect(url('dashboard'));
+});
+
+Route::get('/dashboard', function () {
+    return view('usuario.index');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__ . '/auth.php';
+
+
+Route::group(['prefix' => 'admin','middleware' => 'auth'], function () {
+    Route::controller(ProdutoController::class)->group(function () {
+        Route::get('/produto/{id}', 'show');
+        Route::get('/produto/', 'index');
+        Route::get('/produto/create', 'create');
+        Route::post('/produto', 'store');
+    });
 });
